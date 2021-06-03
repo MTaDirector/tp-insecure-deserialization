@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 03 juin 2021 à 10:04
--- Version du serveur :  5.7.31
--- Version de PHP : 7.3.21
+-- Généré le :  jeu. 03 juin 2021 à 12:23
+-- Version du serveur :  10.4.10-MariaDB
+-- Version de PHP :  7.4.9-dev
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `tp_insecure_deserialization`
+-- Base de données :  `tp_insecure_deserialization`
 --
 CREATE DATABASE IF NOT EXISTS `tp_insecure_deserialization` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE `tp_insecure_deserialization`;
@@ -31,10 +32,10 @@ USE `tp_insecure_deserialization`;
 
 DROP TABLE IF EXISTS `extremely_sensible_datas`;
 CREATE TABLE IF NOT EXISTS `extremely_sensible_datas` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `sensible_data` text COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `extremely_sensible_datas`
