@@ -1,9 +1,9 @@
 <?php
 class User {
-    private $username;
-    private $mdp;
-    private $isAdmin;
-    private $adminAutoCommand = '';
+    public $username;
+    public $mdp;
+    public $isAdmin;
+    public $adminAutoCommand = '';
 
     public function __construct()
     {
@@ -59,7 +59,7 @@ class User {
     /**
      * @return mixed
      */
-    public function isAdmin()
+    public function getIsAdmin()
     {
         return $this->isAdmin;
     }

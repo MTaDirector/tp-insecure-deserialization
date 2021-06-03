@@ -5,7 +5,7 @@
 <body>
     <h1>Bienvenue sur la page d'accueil <?= $user->getUsername() ?></h1>
 
-    <?php if($user->isAdmin()): ?>
+    <?php if($user->getIsAdmin()): ?>
     <h2>Vous êtes administrateur.</h2>
         <form action="" method="post">
             <label for="newImportantData">Ajouter une données importante en base :</label>
