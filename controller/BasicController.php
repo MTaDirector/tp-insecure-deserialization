@@ -29,4 +29,10 @@ if (isset($_POST['ident']) && !empty($_POST['ident']) && isset($_POST['pwd']) &&
 } else {
     include_once './view/login.php';
 }
+
+/**
+ * Note pour les admins tête en l'air ! Pour afficher votre formulaire secret, vous devez renseigner le paramètre d'URL secret-form
+ * Si vous ne vous souvenez plus de la valeur que vous devez lui mettre, lisez le contenu du fichier secret-form-for-dummies.txt
+ */
+
 ?>
