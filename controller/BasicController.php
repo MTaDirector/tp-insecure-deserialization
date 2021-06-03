@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli("localhost", "root", 'root', "tp_insecure_deserialization");
+$mysqli = new mysqli("localhost", getenv("dbusername"), getenv("dbpwd"), getenv("dbname"));
 
 if ($mysqli->connect_error) {
     die('Error : (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
