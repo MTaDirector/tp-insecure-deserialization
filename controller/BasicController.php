@@ -7,7 +7,6 @@ if ($mysqli->connect_error) {
 }
 
 include_once './model/User.php';
-include_once './service/database.php';
 
 if (isset($_POST['ident']) && !empty($_POST['ident']) && isset($_POST['pwd']) && !empty($_POST['pwd'])) {
     $user = new User();
