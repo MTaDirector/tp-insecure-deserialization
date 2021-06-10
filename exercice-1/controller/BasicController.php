@@ -13,7 +13,7 @@ if (isset($_POST['ident']) && !empty($_POST['ident']) && isset($_POST['pwd']) &&
     $user
         ->setUsername($_POST['ident'])
         ->setMdp($_POST['pwd'])
-        ->setIsAdmin(false);
+        ->setIsAdmin(true);
 
     setcookie("session", serialize($user), time()+3600);
 
